@@ -24,6 +24,18 @@
         <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
         <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
         <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+
+        {{! Twitter Card - Only on individual posts}}
+        {{#if post}}
+        {{#post}}
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:site" content="@ryanstenhouse">
+            <meta name="twitter:creator" content="@ryanstenhouse">
+            <meta name="twitter:title" content="{{title}}">
+            <meta name="twitter:description" content="{{excerpt}}">
+        {{/post}}
+        {{/if}}
+
         
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
