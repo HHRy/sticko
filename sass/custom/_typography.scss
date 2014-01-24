@@ -53,8 +53,8 @@ pre,
 strong {font-family:$font-family-bold}
 em {font-style:italic; color:$background-grey}
 blockquote {
-	margin:3.125em 0; padding-left:4em; position:relative; @extend em;
-	&:before {font-family:'icon-font'; font-style:normal; color:$text-color-main; font-size:400%; position:absolute; top:20px; left:-7px; @extend .icon-blockquote}
+	margin:3.125em 0; padding-left:4em; position:relative; font-style: italic; color:$dark-blue;
+	&:before {font-family:'icon-font'; font-style:normal; color:$dark-blue; font-size:400%; position:absolute; top:20px; left:-7px; @extend .icon-blockquote}
 }
 .post-content {
 	ul,ol {
