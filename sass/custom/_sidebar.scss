@@ -11,7 +11,7 @@
 
 	a {text-decoration:none}
 	
-	&:before {background-color:rgba(0, 0, 0, .75); content:""; display:block; position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+	&:before {background-color:rgba(40,55,112, .75); content:""; display:block; position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
 }
 
 .sidebar-data-holder {position:relative; width:100%; height:100%; float:left}
@@ -23,7 +23,7 @@
 
     	@include single-box-shadow(lighten($background-darkgrey, 30%), 0, 1px, 4px, -2px, inset);
 
-    	&:hover {background:$background-orange; padding-left:1.2em}
+    	&:hover {background:$dark-blue; padding-left:1.2em}
     }
 }
 	.nav-control {
@@ -50,8 +50,8 @@
 .social-media-share {
 	margin-top:6%;
 	a {
-		color:$text-color-main; font-size:2.25em;
+		color:$text-color-bright; font-size:2.25em;
 
-		&:hover {color:$text-color-bright}
+		&:hover {color:$light-blue}
 	}
 }
